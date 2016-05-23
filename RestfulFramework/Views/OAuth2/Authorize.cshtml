@@ -1,0 +1,11 @@
+﻿@model RestfulFramework.Models.CodeRequest
+@{
+    ViewBag.Title = "Authorize";
+}
+<h2>Authorize</h2>
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(x=>x.username)
+    @Html.PasswordFor(x=>x.password)
+    <input type="submit" value="登陆"/>  
+}
